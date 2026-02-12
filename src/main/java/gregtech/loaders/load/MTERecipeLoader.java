@@ -13,6 +13,8 @@ import static gregtech.api.util.GTModHandler.RecipeBits.DISMANTLEABLE;
 import static gregtech.api.util.GTModHandler.RecipeBits.NOT_REMOVABLE;
 import static gregtech.api.util.GTModHandler.RecipeBits.REVERSIBLE;
 import static gregtech.api.util.GTRecipeBuilder.HOURS;
+import static gregtech.api.util.GTRecipeBuilder.INGOTS;
+import static gregtech.api.util.GTRecipeBuilder.MINUTES;
 import static gregtech.api.util.GTRecipeBuilder.SECONDS;
 import static gregtech.api.util.GTRecipeBuilder.STACKS;
 import static gregtech.api.util.GTRecipeBuilder.WILDCARD;
@@ -1632,6 +1634,22 @@ public class MTERecipeLoader implements Runnable {
             .duration(1 * HOURS)
             .eut(TierEU.RECIPE_HV)
             .addTo(assemblerRecipes);
+            
+        // High Current Industrial Arc Furnace
+        GTValues.RA.stdBuilder()
+            .itemInputs(
+                GregtechItemList.Casing_Industrial_Arc_Furnace.get(1),
+                ItemList.Field_Generator_EV.get(2),
+                ItemList.Robot_Arm_IV.get(4),
+                GregtechItemList.Energy_Core_EV.get(2),
+                MaterialsAlloy.ZERON_100.getPlate(8),
+                GTOreDictUnificator.get(OrePrefixes.circuit, Materials.IV, 8))
+            .itemOutputs(ItemList.IndustrialArcFurnace.get(1))
+            .fluidInputs(MaterialsAlloy.LAFIUM.getFluidStack(20 * INGOTS))
+            .duration(8 * MINUTES)
+            .eut(TierEU.RECIPE_LuV)
+            .addTo(assemblerRecipes);
+
     }
 
     // This method is for all the structure rework shapeless crafing migration recipes
@@ -1668,6 +1686,11 @@ public class MTERecipeLoader implements Runnable {
         // Integrated Ore Factory Conversion Recipe
         GTModHandler
             .addShapelessCraftingRecipe(ItemList.IntegratedOreFactory.get(1), new Object[] { ItemList.Ore_Processor });
+            
+        // Industrial Arc Furnace Conversion Recipe
+        GTModHandler.addShapelessCraftingRecipe(
+            ItemList.IndustrialArcFurnace.get(1),
+            new Object[] { GregtechItemList.Industrial_Arc_Furnace });
     }
 
     private static void registerSifter() {
