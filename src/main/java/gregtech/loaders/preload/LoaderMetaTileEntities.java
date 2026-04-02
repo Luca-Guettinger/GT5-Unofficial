@@ -833,7 +833,7 @@ public class LoaderMetaTileEntities implements Runnable { // TODO CHECK CIRCUIT 
         ItemList.IntegratedOreFactory.set(
             new MTEIntegratedOreFactory(IntegratedOreFactory.ID, "multimachine.oreprocessor", "Integrated Ore Factory")
                 .getStackForm(1L));
-                
+
         ItemList.IndustrialArcFurnace.set(
             new MTEIndustrialArcFurnace(
                 IndustrialArcFurnace.ID,

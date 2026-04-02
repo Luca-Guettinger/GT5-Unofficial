@@ -1634,7 +1634,7 @@ public class MTERecipeLoader implements Runnable {
             .duration(1 * HOURS)
             .eut(TierEU.RECIPE_HV)
             .addTo(assemblerRecipes);
-            
+
         // High Current Industrial Arc Furnace
         GTValues.RA.stdBuilder()
             .itemInputs(
@@ -1686,7 +1686,7 @@ public class MTERecipeLoader implements Runnable {
         // Integrated Ore Factory Conversion Recipe
         GTModHandler
             .addShapelessCraftingRecipe(ItemList.IntegratedOreFactory.get(1), new Object[] { ItemList.Ore_Processor });
-            
+
         // Industrial Arc Furnace Conversion Recipe
         GTModHandler.addShapelessCraftingRecipe(
             ItemList.IndustrialArcFurnace.get(1),
