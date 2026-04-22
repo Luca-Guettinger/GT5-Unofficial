@@ -1859,4 +1859,10 @@ public final class RecipeMaps {
         .maxIO(1, 1, 1, 0)
         .minInputs(1, 0)
         .build();
+
+    public static final RecipeMap<RecipeMapBackend> SpatialAnomalyRecipes = RecipeMapBuilder
+        .of("gt.recipe.spatialanomaly")
+        .maxIO(3, 3, 3, 3)
+        .minInputs(0, 0)
+        .build();
 }

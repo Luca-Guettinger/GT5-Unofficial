@@ -2043,6 +2043,7 @@ public enum MetaTileEntityIDs {
     AntimatterForge(32027),
     AntimatterGenerator(32028),
     AntimatterHatch(32029),
+    SpatialAnomalyContainmentChamber(32030),
     WireLumiium(32737),
     WireSignalium(32749),
     NeutronAcceleratorUHV(32761),

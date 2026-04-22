@@ -639,7 +639,11 @@ public class MaterialsIDMap extends Int2ObjectOpenHashMap<Materials> {
         r(854, Materials.ConstructionFoam);
         r(855, Materials.Chalcopyrite);
         r(856, Materials.SiliconSG);
+        r(852, Materials.FractalJuice);
+        r(857, Materials.Cardinality);
         r(858, Materials.CrudeOil);
+        r(859, Materials.Causality);
+        r(860, Materials.Chirality);
         r(861, Materials.Emery);
         r(862, Materials.Epidote);
         r(865, Materials.Graphite);
@@ -727,6 +731,21 @@ public class MaterialsIDMap extends Int2ObjectOpenHashMap<Materials> {
         r(951, Materials.Vyroxeres);
         r(952, Materials.Ceruclase);
         r(956, Materials.Tartarite);
+        // Infinity Rework materials (solid items)
+        r(950, Materials.Moebianite);
+        r(953, Materials.Manifold);
+        r(954, Materials.InertTaranium);
+        r(955, Materials.HighlyReactiveTaranium);
+        r(957, Materials.HighlyStableTaranium);
+        r(958, Materials.QuanticalDisturbance);
+        r(959, Materials.Fractal);
+        // Infinity Rework materials (fluids with cells)
+        r(960, Materials.MoebianiteSlag);
+        r(961, Materials.MoebianiteCrystalSlurry);
+        r(962, Materials.PurifiedMoebianite);
+        r(963, Materials.NonOrientableMatter);
+        r(964, Materials.ParastableFractalHelium);
+        r(965, Materials.FractalHeliumBoseEinsteinCondensate);
         r(966, Materials.Orichalcum);
         r(967, Materials.SiliconTetrafluoride);
         r(968, Materials.SiliconTetrachloride);

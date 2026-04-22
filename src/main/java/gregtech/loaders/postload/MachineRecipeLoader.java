@@ -2,6 +2,7 @@ package gregtech.loaders.postload;
 
 import gregtech.api.enums.Materials;
 import gregtech.loaders.postload.chains.BauxiteRefineChain;
+import gregtech.loaders.postload.chains.InfinityLineRecipes;
 import gregtech.loaders.postload.chains.NaniteChain;
 import gregtech.loaders.postload.chains.PCBFactoryRecipes;
 import gregtech.loaders.postload.chains.PurifiedWaterRecipes;
@@ -50,6 +51,7 @@ import gregtech.loaders.postload.recipes.PyrolyseRecipes;
 import gregtech.loaders.postload.recipes.RecipeRemover;
 import gregtech.loaders.postload.recipes.SifterRecipes;
 import gregtech.loaders.postload.recipes.SmelterRecipes;
+import gregtech.loaders.postload.recipes.SpatialAnomalyRecipes;
 import gregtech.loaders.postload.recipes.ThaumcraftRecipes;
 import gregtech.loaders.postload.recipes.ThermalCentrifugeRecipes;
 import gregtech.loaders.postload.recipes.TranscendentPlasmaMixerRecipes;
@@ -124,5 +126,7 @@ public class MachineRecipeLoader implements Runnable {
         NaniteChain.run();
         PCBFactoryRecipes.load();
         PurifiedWaterRecipes.run();
+        InfinityLineRecipes.run();
+        new SpatialAnomalyRecipes().run();
     }
 }

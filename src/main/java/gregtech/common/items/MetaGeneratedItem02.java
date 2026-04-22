@@ -56,6 +56,7 @@ import static gregtech.common.items.IDMetaItem02.Bottle_Vodka;
 import static gregtech.common.items.IDMetaItem02.Bottle_Wheaty_Hops_Juice;
 import static gregtech.common.items.IDMetaItem02.Bottle_Wheaty_Juice;
 import static gregtech.common.items.IDMetaItem02.Bottle_Wine;
+import static gregtech.common.items.IDMetaItem02.Combined_Catalyst;
 import static gregtech.common.items.IDMetaItem02.Cover_AdvancedRedstoneReceiver;
 import static gregtech.common.items.IDMetaItem02.Cover_AdvancedRedstoneReceiverInternal;
 import static gregtech.common.items.IDMetaItem02.Cover_AdvancedRedstoneTransmitter;
@@ -64,6 +65,7 @@ import static gregtech.common.items.IDMetaItem02.Cover_WirelessActivityDetector;
 import static gregtech.common.items.IDMetaItem02.Cover_WirelessFluidDetector;
 import static gregtech.common.items.IDMetaItem02.Cover_WirelessItemDetector;
 import static gregtech.common.items.IDMetaItem02.Cover_WirelessNeedsMaintainance;
+import static gregtech.common.items.IDMetaItem02.CrystalCube;
 import static gregtech.common.items.IDMetaItem02.Display_ITS_FREE;
 import static gregtech.common.items.IDMetaItem02.Dye_Color_00;
 import static gregtech.common.items.IDMetaItem02.Dye_Color_01;
@@ -82,6 +84,8 @@ import static gregtech.common.items.IDMetaItem02.Dye_Color_13;
 import static gregtech.common.items.IDMetaItem02.Dye_Color_14;
 import static gregtech.common.items.IDMetaItem02.Dye_Color_15;
 import static gregtech.common.items.IDMetaItem02.Dye_Indigo;
+import static gregtech.common.items.IDMetaItem02.EntangledSingularity;
+import static gregtech.common.items.IDMetaItem02.FilledFractalCell;
 import static gregtech.common.items.IDMetaItem02.Food_Baked_Baguette;
 import static gregtech.common.items.IDMetaItem02.Food_Baked_Bun;
 import static gregtech.common.items.IDMetaItem02.Food_Baked_Cake;
@@ -136,7 +140,13 @@ import static gregtech.common.items.IDMetaItem02.Food_Sliced_Cucumber;
 import static gregtech.common.items.IDMetaItem02.Food_Sliced_Lemon;
 import static gregtech.common.items.IDMetaItem02.Food_Sliced_Onion;
 import static gregtech.common.items.IDMetaItem02.Food_Sliced_Tomato;
+import static gregtech.common.items.IDMetaItem02.FractalAnomaly;
+import static gregtech.common.items.IDMetaItem02.FractalCell;
+import static gregtech.common.items.IDMetaItem02.FractalSeed;
 import static gregtech.common.items.IDMetaItem02.GelledToluene;
+import static gregtech.common.items.IDMetaItem02.HarmonicInfinity;
+import static gregtech.common.items.IDMetaItem02.HolographicInfinity;
+import static gregtech.common.items.IDMetaItem02.HyperbolicInfinity;
 import static gregtech.common.items.IDMetaItem02.MSFMixture;
 import static gregtech.common.items.IDMetaItem02.Magnetron;
 import static gregtech.common.items.IDMetaItem02.Plank_Acacia;
@@ -181,7 +191,10 @@ import static gregtech.common.items.IDMetaItem02.ThermosCan_Sweet_Jesus_Latte;
 import static gregtech.common.items.IDMetaItem02.ThermosCan_Sweet_Latte;
 import static gregtech.common.items.IDMetaItem02.ThermosCan_Sweet_Tea;
 import static gregtech.common.items.IDMetaItem02.ThermosCan_Tea;
+import static gregtech.common.items.IDMetaItem02.TransfiniteMatterCell;
 import static gregtech.common.items.IDMetaItem02.Vajra_Core;
+import static gregtech.common.items.IDMetaItem02.VyroxeresCanvas;
+import static gregtech.common.items.IDMetaItem02.WeakInfinityCatalyst;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnumEnchantmentType;
@@ -2295,6 +2308,31 @@ public class MetaGeneratedItem02 extends MetaGeneratedItemX32 {
                 "gt.item.drone_remote_interface.tooltip"));
         ItemList.Vajra_Core.set(addItemWithLocalizationKeys(Vajra_Core.ID, "gt.item.vajra_core.name", ""));
         ItemList.Magnetron.set(addItemWithLocalizationKeys(Magnetron.ID, "gt.item.magnetron.name", ""));
+
+        // Infinity Rework items
+        ItemList.Combined_Catalyst
+            .set(addItemWithLocalizationKeys(Combined_Catalyst.ID, "gt.item.combined_catalyst.name", ""));
+        ItemList.VyroxeresCanvas
+            .set(addItemWithLocalizationKeys(VyroxeresCanvas.ID, "gt.item.vyroxeres_canvas.name", ""));
+        ItemList.FractalCell.set(addItemWithLocalizationKeys(FractalCell.ID, "gt.item.fractal_cell.name", ""));
+        ItemList.WeakInfinityCatalyst
+            .set(addItemWithLocalizationKeys(WeakInfinityCatalyst.ID, "gt.item.weak_infinity_catalyst.name", ""));
+        ItemList.CrystalCube.set(addItemWithLocalizationKeys(CrystalCube.ID, "gt.item.crystal_cube.name", ""));
+        ItemList.FractalAnomaly.set(addItemWithLocalizationKeys(FractalAnomaly.ID, "gt.item.fractal_anomaly.name", ""));
+        ItemList.FilledFractalCell
+            .set(addItemWithLocalizationKeys(FilledFractalCell.ID, "gt.item.filled_fractal_cell.name", ""));
+        ItemList.TransfiniteMatterCell
+            .set(addItemWithLocalizationKeys(TransfiniteMatterCell.ID, "gt.item.transfinite_matter_cell.name", ""));
+        ItemList.HolographicInfinity
+            .set(addItemWithLocalizationKeys(HolographicInfinity.ID, "gt.item.holographic_infinity.name", ""));
+        ItemList.HyperbolicInfinity
+            .set(addItemWithLocalizationKeys(HyperbolicInfinity.ID, "gt.item.hyperbolic_infinity.name", ""));
+        ItemList.HarmonicInfinity
+            .set(addItemWithLocalizationKeys(HarmonicInfinity.ID, "gt.item.harmonic_infinity.name", ""));
+        ItemList.FractalSeed.set(addItemWithLocalizationKeys(FractalSeed.ID, "gt.item.fractal_seed.name", ""));
+        ItemList.EntangledSingularity
+            .set(addItemWithLocalizationKeys(EntangledSingularity.ID, "gt.item.entangled_singularity.name", ""));
+
         ItemList.ChaosLocator.set(
             new ItemChaosLocator("Item_Chaos_Locator", "gt.item.chaos_locator.name", "gt.item.chaos_locator.tooltip"));
 

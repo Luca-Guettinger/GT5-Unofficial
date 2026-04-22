@@ -54,7 +54,8 @@ public enum MachineType {
     THERMAL_CENTRIFUGE(FunnyTexts.THERMAL_CENTRIFUGE, "gt.recipe.thermalcentrifuge"),
     UNPACKAGER(FunnyTexts.UNPACKAGER, "gt.recipe.unpackager"),
     WIREMILL(FunnyTexts.WIREMILL, "gt.recipe.wiremill"),
-    DRAWER_FRAMER(FunnyTexts.DRAWER_FRAMER, "gt.recipe.drawerframer");
+    DRAWER_FRAMER(FunnyTexts.DRAWER_FRAMER, "gt.recipe.drawerframer"),
+    SPATIAL_ANOMALY(FunnyTexts.SPATIAL_ANOMALY, "gt.recipe.spatialanomaly");
 
     private static class FunnyTexts {
 
@@ -107,6 +108,7 @@ public enum MachineType {
         static final String UNPACKAGER = "gt.recipe.unpackager.description";
         static final String WIREMILL = "gt.recipe.wiremill.description";
         static final String DRAWER_FRAMER = "gt.recipe.drawerframer.description";
+        static final String SPATIAL_ANOMALY = "gt.recipe.spatialanomaly.description";
     }
 
     private static final String TT_machineType = "GT5U.MBTT.MachineType";

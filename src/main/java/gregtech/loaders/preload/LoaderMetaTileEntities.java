@@ -223,6 +223,7 @@ import gregtech.common.tileentities.machines.multi.MTEPyrolyseOven;
 import gregtech.common.tileentities.machines.multi.MTEPyrolyseOvenLegacy;
 import gregtech.common.tileentities.machines.multi.MTEResearchCompleter;
 import gregtech.common.tileentities.machines.multi.MTESolarFactory;
+import gregtech.common.tileentities.machines.multi.MTESpatialAnomalyContainmentChamber;
 import gregtech.common.tileentities.machines.multi.MTESpinmatron;
 import gregtech.common.tileentities.machines.multi.MTETranscendentPlasmaMixer;
 import gregtech.common.tileentities.machines.multi.MTEUniversalChemicalFuelEngine;
@@ -872,6 +873,15 @@ public class LoaderMetaTileEntities implements Runnable { // TODO CHECK CIRCUIT 
         ItemList.FlotationCell.set(
             new MTEFrothFlotationCell(FlotationCell.ID, "gtpp.multimachine.flotationcell", "Flotation Cell Regulator")
                 .getStackForm(1L));
+
+        ItemList.SpatialAnomalyContainmentChamber.set(
+            new MTESpatialAnomalyContainmentChamber(
+                SpatialAnomalyContainmentChamber.ID,
+                "multimachine.spatialanomalycontainmentchamber",
+                "Spatial Anomaly Containment Chamber").getStackForm(1L));
+        addItemTooltip(
+            ItemList.SpatialAnomalyContainmentChamber.get(1),
+            GTAuthors.buildAuthorsWithFormatSupplier(GTAuthors.AuthorNoc));
 
         ItemList.MacerationStack.set(
             new MTEIndustrialMacerator(

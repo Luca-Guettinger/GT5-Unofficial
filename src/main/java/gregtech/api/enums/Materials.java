@@ -1072,6 +1072,25 @@ public class Materials implements IColorModulationContainer, IOreMaterial {
     public static Materials StargateCrystalSlurry;
     public static Materials LumipodExtract;
     public static Materials BiocatalyzedPropulsionFluid;
+
+    // Infinity Rework materials
+    public static Materials Moebianite;
+    public static Materials Manifold;
+    public static Materials MoebianiteSlag;
+    public static Materials MoebianiteCrystalSlurry;
+    public static Materials PurifiedMoebianite;
+    public static Materials NonOrientableMatter;
+    public static Materials InertTaranium;
+    public static Materials HighlyReactiveTaranium;
+    public static Materials HighlyStableTaranium;
+    public static Materials QuanticalDisturbance;
+    public static Materials ParastableFractalHelium;
+    public static Materials FractalHeliumBoseEinsteinCondensate;
+    public static Materials Fractal;
+    public static Materials FractalJuice;
+    public static Materials Cardinality;
+    public static Materials Causality;
+    public static Materials Chirality;
     // endregion
 
     // region GTNH Materials

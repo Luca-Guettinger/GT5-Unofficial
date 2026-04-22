@@ -3012,6 +3012,24 @@ public enum ItemList implements IItemContainer {
     Gravitational_Lens,
     Planck_Manifold,
 
+    // Infinity Rework
+    Combined_Catalyst,
+    VyroxeresCanvas,
+    FractalCell,
+    WeakInfinityCatalyst,
+    CrystalCube,
+    FractalAnomaly,
+    FilledFractalCell,
+    TransfiniteMatterCell,
+    HolographicInfinity,
+    HyperbolicInfinity,
+    HarmonicInfinity,
+    FractalSeed,
+    EntangledSingularity,
+    SpatialAnomalyContainmentChamber,
+    CASING_ANOMALY_CONTAINMENT,
+    GLASS_ANOMALY_CONTAINMENT,
+
     // semicolon after the comment to reduce merge conflicts
     ;
 

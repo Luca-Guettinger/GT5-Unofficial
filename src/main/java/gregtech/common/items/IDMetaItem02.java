@@ -166,6 +166,22 @@ public enum IDMetaItem02 {
     Vajra_Core(585),
     Magnetron(586),
     Plank_Cherry_EFR(587),
+
+    // Infinity Rework
+    Combined_Catalyst(588),
+    VyroxeresCanvas(589),
+    FractalCell(590),
+    WeakInfinityCatalyst(591),
+    CrystalCube(592),
+    FractalAnomaly(593),
+    FilledFractalCell(594),
+    TransfiniteMatterCell(595),
+    HolographicInfinity(596),
+    HyperbolicInfinity(597),
+    HarmonicInfinity(598),
+    FractalSeed(599),
+    EntangledSingularity(600),
+
     Display_ITS_FREE(765);
 
     public final int ID;
